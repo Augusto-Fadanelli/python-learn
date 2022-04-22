@@ -22,10 +22,10 @@ translator = Translator()
 
 # pt - portuguese | en - english | es - spanish | it - italian
 def trans(evento=None): # Ignora o evento do window.bind
-    tex   = text_input.get('1.0', 'end')
-    source    = combo_input.get()
-    des   = combo_output.get()
-    result = translator.translate(text=tex, src=source, dest=des)
+    text   = text_input.get('1.0', 'end')
+    src    = combo_input.get()
+    dest   = combo_output.get()
+    result = translator.translate(text=text, src=src, dest=dest)
 
     text_output.configure(state='normal')
     text_output.delete('1.0', 'end')
