@@ -17,6 +17,10 @@ clock = pygame.time.Clock()
 rect_x = width/2 - 40/2
 rect_y = height/2 - 50/2
 
+# Movement of player
+player_x = width/2
+player_y = height/2
+
 # Loop do jogo
 while True:
     clock.tick(60) # Seta o fps do jogo
@@ -28,6 +32,27 @@ while True:
         if event.type == QUIT:
             pygame.quit()
             exit()
+        # Se tecla foi pressionada
+        '''
+        if event.type == KEYDOWN:
+            if event.key == K_a:
+                player_x -= 5 # Move para a esquerda
+            if event.key == K_d:
+                player_x += 5 # Move para a direita
+            if event.key == K_w:
+                player_y -= 5 # Move para cima
+            if event.key == K_s:
+                player_y += 5 # Move para baixo
+        '''
+        # Se a tecla está sendo pressionada
+        if pygame.key.get_pressed()[K_a]:
+            player_x -= 5 # Move para a esquerda
+        if pygame.key.get_pressed()[K_d]:
+            player_x += 5 # Move para a direita
+        if pygame.key.get_pressed()[K_w]:
+            player_y -= 5 # Move para cima
+        if pygame.key.get_pressed()[K_s]:
+            player_y += 5 # Move para baixo
 
     # Shapes
     # Forma(screen, (R,G,B), (x,y), raio) | Coordenada no centro do circle
@@ -36,6 +61,9 @@ while True:
     pygame.draw.line(screen, (255,255,0), (300, 0), (400, 480), 5)
     # Forma(screen, (R,G,B), (x,y,width,height)) | Coordenada no canto superior esquerdo do rect
     pygame.draw.rect(screen, (255,0,0), (rect_x, rect_y, 40, 50))
+
+    # Player
+    pygame.draw.circle(screen, (222,144,138), (player_x,player_y), 15)
 
     # Movement of rect
     if rect_x == width:
