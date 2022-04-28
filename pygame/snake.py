@@ -22,6 +22,7 @@ snake_y = screen_height/2 - 10
 snake_speed = 5
 control_x = snake_speed
 control_y = 0
+is_dead = False
 
 # Food
 food_x = randint(32, 608)
@@ -30,9 +31,23 @@ food_y = randint(32, 448)
 eat_song = pygame.mixer.Sound('eat_song.wav')
 
 snake_list = []
-def growth_snake(snake_list):
+def growthSnake(snake_list):
     for pos in snake_list:
         pygame.draw.rect(screen, (0,255,0), (pos[0], pos[1], 20, 20))
+
+def reloadGame():
+    global score, snake_x, snake_y, control_x, control_y, is_dead, food_x, food_y, snake_size, snake_list, head_list
+    score = 0
+    snake_x = screen_width/2 - 10
+    snake_y = screen_height/2 - 10
+    control_x = snake_speed
+    control_y = 0
+    is_dead = False
+    food_x = randint(32, 608)
+    food_y = randint(32, 448)
+    snake_size = 30
+    snake_list = []
+    head_list = []
 
 while True:
     clock.tick(60)
@@ -82,10 +97,41 @@ while True:
     head_list.append(snake_x)
     head_list.append(snake_y)
     snake_list.append(head_list)
-    snake_size = score + 3
+
+    if snake_list.count(head_list) > 1: # Se existir um elemento na lista igual a head
+        message_reload = 'Game Over! Press R to play again'
+        formatted_text_reload = font.render(message_reload, True, (0,0,0))
+        pos_text_reload = formatted_text_reload.get_rect()
+
+        is_dead = True
+        while is_dead:
+            screen.fill((255,255,255))
+            for event in pygame.event.get():
+                if event.type == QUIT:
+                    pygame.quit()
+                    exit()
+                if event.type == KEYDOWN:
+                    if event.key == K_r:
+                        reloadGame()
+
+            pos_text_reload.center = (screen_width//2, screen_height//2)
+            screen.blit(formatted_text_reload, pos_text_reload)
+            pygame.display.update()
+
+    # Se a snake sair da tela
+    if snake_x < 0:
+        snake_x = screen_width
+    elif snake_x > screen_width:
+        snake_x = 0
+    elif snake_y < 0:
+        snake_y = screen_height
+    elif snake_y > screen_height:
+        snake_y = 0
+
+    snake_size = score + 30
     if len(snake_list) > snake_size:
         del snake_list[0]
-    growth_snake(snake_list)
+    growthSnake(snake_list)
 
     # Score
     message = f'Score: {score}'
