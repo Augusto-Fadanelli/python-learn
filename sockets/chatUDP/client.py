@@ -12,8 +12,6 @@ def receiveMessage():
 def sendMessage(server_address):
     while True:
         message = input()
-        if message == 'disconnect()':
-            break
         sent = local_socket.sendto(message.encode(), server_address)
 
 if __name__ == '__main__':
