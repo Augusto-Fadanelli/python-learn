@@ -43,16 +43,25 @@ def main():
         # Call the Sheets API
         sheet = service.spreadsheets()
 
-        # Adicionar tuplas
+        # Ler valores em células
+        result = sheet.values().get(
+            spreadsheetId=SAMPLE_SPREADSHEET_ID, range=SAMPLE_RANGE_NAME).execute()
+        rows = result.get('values', [])
+        print('{0} rows retrieved.'.format(len(rows)))
+        print(rows)
+
+        # Escrever valores em células
+        '''
         add_values = [
             ['Jonas', '49', '32143212399', '24/05/2022', 'sim'],
             ['Alemão', '32', '67350910100', '24/05/2022', 'sim'],
             ['Vanderlei', '63', '97240028462', '24/05/2022', 'nao']
         ]
-
-        result = sheet.values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID,
-                                       range='Página1!A7', valueInputOption='USER_ENTERED',  # RAW ou USER_ENTERED
-                                       body={'values': add_values}).execute()
+        
+        result = sheet.values().update(
+            spreadsheetId=SAMPLE_SPREADSHEET_ID, range='Página1!A7',
+            valueInputOption='USER_ENTERED', body={'values': add_values}).execute() # RAW ou USER_ENTERED
+        '''
 
         # Ler planilha
         # Planilha e intervalo de células a ser lido
@@ -71,6 +80,8 @@ def main():
         print(values)
     except HttpError as err:
         print(err)
+
+
 
 if __name__ == '__main__':
     main()
