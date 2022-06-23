@@ -1,3 +1,6 @@
+Aula: https://youtu.be/naGF7EIUFp0
+Requirements doc: https://pip.pypa.io/en/stable/reference/requirements-file-format/
+
 $ python -m venv nome_venv
 
 Posso ter mais de um ambiente venv em um projeto
