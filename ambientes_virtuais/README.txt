@@ -80,5 +80,7 @@ $ pip install pip-autoremove
 $ pip-autoremove nome_da_lib
 
 Outras ferramentas
-$ pipdeptree
-$ pipx # para instalar libs globais sem sujar o ambiente
+pipdeptree
+pyenv
+pipx # para instalar libs globais sem sujar o ambiente
+poetry
