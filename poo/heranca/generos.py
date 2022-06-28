@@ -1,7 +1,7 @@
 from typing import List
-from abc import abstractmethod
+from abc import ABC, abstractmethod
 
-class Animal:
+class Animal():
     __dormindo = False
     __comendo = False
 
@@ -39,24 +39,16 @@ class Animal:
 
 class Mamifero(Animal):
     def __init__(self, tam: int, peso: int, carnivoro: bool):
-        self.tam = tam
-        self.peso = peso
+        super().__init__(tam, peso)
         self.carnivoro = carnivoro
 
-    def comer(self):
-        super().comer()
-
-    def dormir(self):
-        super().dormir()
+    def amamentar(self):
+        print('\tAmamentou a prole.')
 
 class Ave(Animal):
-    def __init__(self, tam: int, peso: int, cores: List[str]):
-        self.tam = tam
-        self.peso = peso
+    def __init__(self, tam: int, peso: int, cores: List[str]=['Preto']):
+        super().__init__(tam, peso)
         self.cores = cores
 
-    def comer(self):
-        super().comer()
-
-    def dormir(self):
-        super().dormir()
+    def botarOvos(self):
+        print('\tBotou Ovos.')
