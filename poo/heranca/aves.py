@@ -1,26 +1,17 @@
 from generos import Ave
 
+class Frango(Ave):
+    def cantar(self):
+        print('\tCocoricó!')
+
 class PicaPau(Ave):
-    cores = ['vermelho', 'azul', 'branco']
-    altura = 35
-    peso = 250
-
-    # def comer(self):
-    #     print('comendo')
-
-    # def dormir(self):
-    #     print('dormindo')
-
     def voar(self):
-        pass
+        print('\tO pica-pau está voando!')
 
+class Pato(Ave):
+    def nadar(self):
+        print('\tO pato está nadando!')
 
 class Urubu(Ave):
-    cores = ['vermelho']
-    altura = 65
-    peso = 1_200
-
-class PapaLeguas(Ave):
-    cores = ['azul', 'roxo']
-    altura = 56
-    peso = 280
+    def voar(self):
+        print('\tO urubu está voando!')

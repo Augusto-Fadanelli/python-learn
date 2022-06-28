@@ -2,11 +2,13 @@ from mamiferos import *
 from aves import *
 
 if __name__ == '__main__':
-    pica_pau = PicaPau()
-    zeca_urubu = Urubu()
-    papa_leguas = PapaLeguas()
-
+    # Mamíferos
     pateta = Cachorro()
-    scooby_doo = Cachorro()
     perna_longa = Coelho()
+    frajola = Gato()
     gaguinho = Porco()
+
+    joao = Frango()
+    pica_pau = PicaPau()
+    patolino = Pato()
+    zeca_urubu = Urubu()

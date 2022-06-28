@@ -1,10 +1,17 @@
 from generos import Mamifero
 
 class Cachorro(Mamifero):
-    pass
+    def latir(self):
+        print('\tAu au au!')
 
 class Coelho(Mamifero):
-    pass
+    def fugir(self):
+        print('\tO coelho fugiu!')
+
+class Gato(Mamifero):
+    def miar(self):
+        print('\tMiau!')
 
 class Porco(Mamifero):
-    pass
+    def grunhir(self):
+        print('\tOinc!')
