@@ -32,8 +32,8 @@ if __name__ == '__main__':
     pica_pau.bicar()
 
     # Bagulhos estranhos
-    # print('\nPerry')
-    # perry = Ornitorrinco(50, 1_800)
-    # perry.som()
-    # perry.botarOvos()
-    # perry.amamentar()
+    print('\nPerry')
+    perry = Ornitorrinco(50, 1_800)
+    perry.som()
+    perry.botarOvos()
+    perry.amamentar()
