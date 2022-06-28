@@ -7,5 +7,6 @@ if __name__ == '__main__':
     papa_leguas = PapaLeguas()
 
     pateta = Cachorro()
+    scooby_doo = Cachorro()
     perna_longa = Coelho()
     gaguinho = Porco()
