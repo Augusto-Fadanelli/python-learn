@@ -13,9 +13,9 @@ Exemplo do Carro:
  -> Composição
 
 Herança
- -> Polimorfismo X
- -> Classes abstratas X
- -> Métodos abstratos X
+ -> Polimorfismo
+ -> Classes abstratas
+ -> Métodos abstratos
  -> super()
  -> Herança múltipla:
    >> Diamond of Death
