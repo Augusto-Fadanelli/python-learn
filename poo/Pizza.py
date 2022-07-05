@@ -11,9 +11,9 @@ class Pizza:
     def mudarTamanho(cls, pedacos: int):
         cls.pedacos = pedacos
 
-    # @staticmethod
-    # def ingredientesBase():
-    #     return 'Massa, molho de tomate, queijo, cebola'
+    @staticmethod
+    def ingredientesBase():
+        return 'Massa, molho de tomate, queijo, cebola'
 
 if __name__ == '__main__':
     print(Pizza.pedacos)
@@ -26,14 +26,16 @@ if __name__ == '__main__':
     print(Pizza.pedacos)
     print()
 
-    # Pizza.mudarTamanho(12)
-    # print(Pizza.pedacos)
-    # print(mus.pedacos)
-    #
-    # mar = Pizza('Margherita')
-    # print(mar.pedacos)
+    Pizza.mudarTamanho(12)
+    print(Pizza.pedacos)
+    print(mus.pedacos)
 
-    ###
-    # print(Pizza.ingredientesBase())
+    mar = Pizza('Margherita')
+    print(mar.pedacos)
+
+    ##
+    print(Pizza.ingredientesBase())
+    print(mar.ingredientesBase())
+
 
 
