@@ -2,6 +2,11 @@ Aula: https://youtu.be/naGF7EIUFp0
 Aula: https://youtu.be/cEkA9PH2oEk
 Requirements doc: https://pip.pypa.io/en/stable/reference/requirements-file-format/
 
+Convenção de versões: 1.0.4 -> Major.Minor.Patch
+    Major -> Quebra de compatibilidade
+    Minor -> Novas funcionalidades
+    Patch -> Atualização de Bugs
+
 $ python -m venv nome_venv
 
 Posso ter mais de um ambiente venv em um projeto

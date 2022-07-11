@@ -2,6 +2,7 @@
 
 ## Assuntos
    * [Ambientes virtuais, Versionamento e Segurança](https://github.com/Augusto-Fadanelli/python-learn/tree/main/ambientes_virtuais)
+   * [Metaprojeto](https://github.com/Augusto-Fadanelli/python-learn/tree/main/metaprojeto)
    * [Variáveis de Ambiente](https://github.com/Augusto-Fadanelli/python-learn/tree/main/var_de_ambiente)
    * [Sockets](https://github.com/Augusto-Fadanelli/python-learn/tree/main/sockets)
    * [Tkinter](https://github.com/Augusto-Fadanelli/python-learn/tree/main/tkinter)
