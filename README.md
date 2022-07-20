@@ -65,7 +65,7 @@
 
 
 ### CLI
-  * [Argparse] (https://github.com/Augusto-Fadanelli/python-learn/tree/main/python_learn/argparse)
+  * [Argparse](https://github.com/Augusto-Fadanelli/python-learn/tree/main/python_learn/argparse) (Live dunossauro #36)
   * Click e Typer (Live dunossauro #88)
   * Google-Fire (Live dunossauro #157)
   * Rich
