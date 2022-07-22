@@ -7,7 +7,7 @@
 
 ### Básico I
   * [Erros e Exceções](https://github.com/Augusto-Fadanelli/python-learn/tree/main/python_learn/erros-excecoes) (Live dunossauro #60)
-  * Formatação de Strings (Live dunossauro #181)
+  * [Formatação de Strings](https://github.com/Augusto-Fadanelli/python-learn/tree/main/python_learn/format) (Live dunossauro #181)
   * Lists, Tuples, Sets and Dictionaries (Live dunossauro #17)
   * Funções Embutidas
 
