@@ -52,8 +52,9 @@
 
 ### Web
   * Flask (Lives dunossauro #56 #175)
-  * Django (Live dunossauro #146)
+  * Django
     * [API Google Forms](https://github.com/Augusto-Fadanelli/python-learn/tree/main/python_learn/django/gforms)
+  * [Live dunossauro #146](https://github.com/Augusto-Fadanelli/python-learn/tree/main/python_learn/django/du-146)
   * FastAPI (Live dunossauro #113)
   * Tornado
 
