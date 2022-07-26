@@ -13,8 +13,8 @@
 
 ### Básico II
   * Desenhos com Turtle
+  * [Manipulação de Arquivos](https://github.com/Augusto-Fadanelli/python-learn/tree/main/python_learn/manipulando_arquivos) (Live dunossauro #16)
   * Criar e Manipular Diretórios (Live dunossauro #34)
-  * Manipulação de Arquivos (Live dunossauro #16)
   * [Variáveis de Ambiente](https://github.com/Augusto-Fadanelli/python-learn/tree/main/python_learn/var_de_ambiente)
 
 
