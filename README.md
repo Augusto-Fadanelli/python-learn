@@ -117,4 +117,4 @@
   * [Programação de Redes com Python - Brandon Rhodes e John Goerzen (1ªEd. 2015)](https://github.com/Augusto-Fadanelli/python-learn/tree/main/python_learn/programa%C3%A7%C3%A3o_de_redes_com_python)
 
 ### Cursos
-
+  * [Curso de Django Web Framework e Django Rest Framework - Otávio Miranda](https://github.com/Augusto-Fadanelli/python-learn/tree/main/python_learn/django_otavio_miranda/)
