@@ -80,7 +80,6 @@
 ### Testes
   * Pytest (Live dunossauro #167)
   * Behave (Live dunossauro Selenium com Python #EXTRA - BDD com Behave)
-  * Selenium (Curso dunossauro de Selenium com Python)
   * Appium (Live dunossauro #144)
 
 ### Banco de Dados
@@ -118,3 +117,4 @@
 
 ### Cursos
   * [Curso de Django Web Framework e Django Rest Framework - Otávio Miranda](https://github.com/Augusto-Fadanelli/recipes)
+  * [Curso de Selenium - Eduardo Mendes](https://github.com/Augusto-Fadanelli/python-learn/tree/main/python_learn/selenium_eduardo_mendes)
