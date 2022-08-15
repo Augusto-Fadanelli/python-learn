@@ -7,7 +7,6 @@ from selenium.webdriver.common.keys import Keys
 url = 'https://curso-python-selenium.netlify.app/aula_03.html#'
 
 browser = Firefox()
-
 browser.get(url)
 
 sleep(1)
