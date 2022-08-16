@@ -2,7 +2,7 @@
   * Requisitos (Arch)
     ````
     $ pip install Selenium
-    $ sudo pacman -S geckodriver
+    $ sudo pacman -S firefox geckodriver chromium
     ````
 
 ### Links úteis:
