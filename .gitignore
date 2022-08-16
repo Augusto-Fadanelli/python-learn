@@ -137,6 +137,7 @@ dmypy.json
 token.json
 __localcode/
 .DS_Store
+geckodriver.log
 
 # Backup files
 *.bak
