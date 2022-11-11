@@ -24,6 +24,7 @@ class Window(QMainWindow):
 
         font = QFont()
         font.setPixelSize(90)
+        base.setFont(font)
 
         self.label = QLabel('Deixa um like!')
         self.label.setAlignment(Qt.AlignCenter)
