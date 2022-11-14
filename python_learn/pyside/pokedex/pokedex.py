@@ -1,3 +1,5 @@
+# pip install pyside6 httpx
+
 from pathlib import Path
 from PySide6.QtCore import QObject, Slot
 from PySide6.QtQml import QQmlApplicationEngine
