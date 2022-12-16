@@ -94,7 +94,7 @@
 
 ### Redes e Segurança de Redes
   * [Sockets](https://github.com/Augusto-Fadanelli/python-learn/tree/main/python_learn/sockets)
-  * Scapy
+  * [Scapy](https://github.com/Augusto-Fadanelli/python-learn/tree/main/python_learn/scapy)
   * Nmap
   * Requests
 
